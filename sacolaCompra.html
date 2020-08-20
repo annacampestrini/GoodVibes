@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/jumbotron.css">
+  <script src="https://kit.fontawesome.com/922b6ec289.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+
+  <title>GOOD VIBES</title>    
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto blog-header">
+      <img src="_img/good1.png" width="150" height="150" alt="">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="index.html" id="pagHome">Home</a>
+        <a class="nav-link" href="produtos.html" id="pagProdutos">Freed</a>
+        <a class="nav-link" data-toggle="popover"  data-placement="bottom" data-content="Sair">Sair</a>
+  </header>
+</div>
+<main role="main">
+  <div class="container">
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+    <img class="mr-3" src="_img/farm2.jpg" alt="" width="48" height="48">
+    <div class="lh-100">
+      <h6 class="mb-0 text-white lh-100">Anna Campestrini</h6>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">Telefone: (99)9 9999-9999</h6>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">E-mail: aaa@gmail.com</h6>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">CNPJ: 99.999.999/9999-99</h6>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">CEP: 99999-999</h6>
+    </div>
+    <div class="lh-100 p-3">
+      <i class="btn far fa-edit verde" data-target="#criarConta" data-toggle="modal" data-target=".bd-example-modal-lg"></i>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Sacola de Compras</h6>
+    <div class="media text-muted pt-3">
+        <img src="_img/bootstrap.png" width="32" height="32" class="mr-2 rounded">
+        <div class="media-body mb-0 small lh-125 border-bottom border-gray">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <strong class="text-body">Banana Comum</strong>
+            <label for="recipient-name" class="col-form-label">Quantidade</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <span class="d-block text-body">12.99</span>
+            <i class="btn fas fa-times"></i>
+          </div>
+        </div>
+      </div>
+      <div class="media text-muted pt-3">
+        <img src="_img/bootstrap.png" width="32" height="32" class="mr-2 rounded">
+        <div class="media-body mb-0 small lh-125 border-bottom border-gray">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <strong class="text-body">Banana Comum</strong>
+            <label for="recipient-name" class="col-form-label">Quantidade</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <span class="d-block text-body">12.99</span>
+            <i class="btn fas fa-times"></i>
+          </div>
+        </div>
+      </div>
+      <div class="my-3 bg-white">
+        <form>
+          <div class="form-row">
+            <div class="col-11">
+              <input type="text" class="form-control" id="recipient-name" placeholder="CEP">
+            </div>
+              <div class="col pt-1">
+                <a class="my-1 mr-sm-2" href="#" class="btn" ><button class="btn verde"><i data-toggle="collapse" href="#cep" aria-expanded="false" aria-controls="cep" class="fas fa-shipping-fast"></i></a></button>
+              </div>
+          </div>
+          <div class="collapse" id="cep">
+              <fieldset class="form-group">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <ul class="list-group list-group-horizontal">
+                      <li class="list-group-item">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                            <label class="form-check-label" for="gridRadios1" >Correios - PAC</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                            <label class="form-check-label" for="gridRadios2">Correios - SEDEX</label>
+                          </li>
+                      </ul>
+                    </li>
+                      <li class="list-group-item">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item preto">R$ 27.65</li>
+                          <li class="list-group-item preto">R$ 56.87</li>
+                      </ul>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <strong class="text-body">Total</strong>
+            <label for="recipient-name" class="col-form-label">R$ 50,00</label>
+          </div>
+        </form>
+        </div>
+        <div class="card card-body">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Formas de Pagamento</h6>
+            <fieldset class="form-group">
+                <div class="row">
+                   <legend class="col-form-label pt-0"></legend>
+                      <div class="col-sm-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Cartão
+                          </label>
+                          <div class="card card-body">
+                       <form>
+                        <div class="form-row">
+                          <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Cidade">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Estado">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="CEP">
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Boleto Bancario
+                          </label>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <p class="alert alert-success pl-2 pr-1" role="alert"> Não tem conta? Se Cadastre <a class="preto" id="pagCadastro" href="cadastro.html">aqui,</a> antes de finalizar o pedido!!!</p>
+            <button class="btn verde" data-toggle="modal" data-target="#carrinho02">Finalizar Pedido</button>
+        </div>
+      </div>
+        
+      </div>
+  </div>
+  </div>
+</main>
+
+<!--  Conta -->
+  <div class="modal fade bd-example-modal-lg" data-backdrop="static" id="criarConta" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Dados</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>              
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">CPF/CNPJ</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">CEP</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Telefone</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-sm-6 my-1">
+                <label for="message-text" class="col-form-label">E-mail</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+            <div class="col-sm-6 my-1">
+              <label for="message-text" class="col-form-label">Senha</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn verde2" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn verde">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

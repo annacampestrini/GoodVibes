@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/jumbotron.css">
+  <script src="https://kit.fontawesome.com/922b6ec289.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+
+  <title>GOOD VIBES</title>    
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto blog-header">
+      <img src="_img/good1.png" width="150" height="150" alt="">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/" id="pagHome">Home</a>
+        <a class="nav-link" href="/produtos" id="pagProdutos">Produtos</a>
+        <a class="nav-link" href="/cadastro" id="pagProdutos">Se cadastre!</a>
+      </nav>
+  </header>
+</div>
+<main role="main">
+  <div class="container">
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+      <img class="mr-3" src="_img/farm2.jpg" alt="" width="48" height="48">
+    <div class="lh-100">
+      <div id="tnome"></div>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">Telefone</h6>
+      <div id="ttelefone"></div>
+    </div>
+    <div class="lh-100 p-3">
+      <h6 class="mb-0 text-white lh-100">E-mail</h6>
+      <div id="temail"></div>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Produtos</h6>
+    
+    <div id="resultado"></div>
+
+    <a href="cadProdutos.html" class="float-right btn verde5"><i class="fas fa-plus"></i></a>
+  </div>
+</main>
+
+<footer class="container">
+  <p>&copy; Good Vibes 2020</p>
+</footer>
+
+<script src="logado.js"></script>
+<script src="info.js"></script>
+
+</body>
+
+</html>

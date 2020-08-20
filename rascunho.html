@@ -1,0 +1,86 @@
+update += '<div class="form-row align-items-center">' +
+    '<div class="col-sm-9 my-1">' +
+    '<label class="col-form-label preto">Nome IMG:</label>' +
+    '<input type="text" class="form-control" name="nome_img">' +
+  '</div>' +
+  '<div class="col-sm-9 my-1">' +
+   ' <label class="col-form-label preto">Nome:</label>' +
+    '<input type="text" class="form-control" name="nome">' +
+  '</div>' +
+  '<div class="col-sm-3 my-1">' +
+    '<label for="recipient-name" class="col-form-label preto">Preço/Kg:</label>' +
+   ' <input type="number" id="quantity" class="form-control" name="preco" >' +
+ ' </div>' +
+    '<label for="recipient-name" class="col-form-label preto">Descrição</label>' +
+   ' <input type="text" id="quantity"  class="form-control" name="descricao"><br><br>' +
+'</div>' +
+  '<button type="submit" class="btn verde">Cadastrar</button>'
+
+
+
+
+
+
+
+
+
+
+
+
+
+  tproduto += 
+                '<div class="row card-columns"> ' +
+                    '<div class="col-4 col-sm-4 col-md-3 col-lg-2" data-target="#infoProd" data-toggle="modal">' +
+                        '<div class="card h-90 btn-wrap" style="max-width: 100rem; max-height: 20rem;">' +
+                        '<div class="media" style="float: left;">' +
+                            '<img src="_img/banana.jpg" class="card-img-top imgCard">' +
+                                '<div class="media-body">' +
+                                    '<i class="fas fa-plus"></i>' +
+                                '</div>' +
+                            '</div>' +
+                            '<div class="card-body ">' +
+                                '<h5 class="card-title">' + obj[x].nome + '</h5>' +
+                                '<h3 class="card-title">' + obj[x].preco + '</h3>' +
+                            ' </div>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' 
+
+            }
+
+
+
+
+
+
+
+
+            for(x=0; x<obj.length; x++){
+
+
+
+              tcadastro +=
+              '<div class="container">' +
+              '<div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">' +
+                  '<img class="mr-3" src="_img/farm2.jpg" alt="" width="48" height="48">' +
+              '<div class="lh-100">' +
+                  '<h6 class="mb-0 text-white lh-100">'+ obj[x].tpessoa + obj[x].sobrenome_tpessoa  + '</h6>' +
+              '</div>' + 
+                  '<div class="lh-100 p-3">' +
+                  '<h6 class="mb-0 text-white lh-100">' + obj[x].cpfjUsuario +'</h6>' +
+              '</div>' +
+              '<div class="lh-100 p-3">' +
+                  '<h6 class="mb-0 text-white lh-100">' + obj[x].emailUsuario+ '</h6>'
+              '</div>' +
+              '<div class="lh-100 p-3">' +
+                  '<h6 class="mb-0 text-white lh-100">CNPJ: 99.999.999/9999-99</h6>'
+              '</div>' +
+              '<div class="lh-100 p-3">' +
+                  '<h6 class="mb-0 text-white lh-100">CEP: 99999-999</h6>' +
+              '</div>' + 
+              '<div class="lh-100 p-3">' +
+                  '<i class="btn far fa-edit verde" data-target="#criarConta" data-toggle="modal" data-target=".bd-example-modal-lg"></i>' +
+              '</div>' +
+              '<div>'
+
+          }

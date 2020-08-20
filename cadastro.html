@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/jumbotron.css">
+  
+  <script src="https://kit.fontawesome.com/922b6ec289.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+
+  <title>GOOD VIBES</title>    
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto blog-header">
+      <img src="_img/good1.png" width="150" height="150" alt="">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/" id="pagHome">Home</a>
+        <a class="nav-link" href="/logado" id="pagProdutos">Produtos</a>
+        <a class="nav-link" href="#" id="pagLogin">Se Cadastre!</a>
+        <!-- <a  href="/sacolaCompra" id="pagSacola"><i class="fas fa-cart-arrow-down mx-3 nav-link"></i></a> -->
+  </header>
+</div>
+<main role="main">
+  <div class="container">
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Cadastro</h6>
+    <form name="formCadastro" action="/cadastroPessoa" method="post">
+        <div class="form-row align-items-center">
+          <div class="col-sm-6 my-1">
+            <label for="message-text" class="col-form-label">Nome</label>
+            <input type="text" class="form-control" name="nomeUsuario">
+        </div>
+          <div class="col-sm-6 my-1">
+            <label for="message-text" class="col-form-label">Sobrenome</label>
+            <input type="text" class="form-control" name="sobrenomeUsuario" maxlength="100">
+          </div>
+        </div>             
+        <div class="form-group">
+          <label for="message-text" class="col-form-label">CPF/CNPJ</label>
+          <input type="text" class="form-control" name="cpfjUsuario" maxlenght="11">
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-4 my-1">
+                <label for="message-text" class="col-form-label">Rua</label>
+                <input type="text" class="form-control" name="EndRuaUsuario">
+          </div>
+          <div class="col-sm-4 my-1">
+              <label for="message-text" class="col-form-label">Bairro</label>
+              <input type="text" class="form-control" name="EndBairroUsuario">
+          </div>
+          <div class="col-sm-4 my-1">
+            <label for="message-text" class="col-form-label">Cidade</label>
+            <input type="text" class="form-control" name="EndCidadeUsuario">
+        </div>
+        <div class="col-sm-6 my-1">
+          <label for="message-text" class="col-form-label">Numero Casa/Apartamento</label>
+          <input type="text" class="form-control" name="EndNumUsuario">
+      </div>
+      <div class="col-sm-6 my-1">
+        <label for="message-text" class="col-form-label">Telfone</label>
+        <input type="text" class="form-control" name="telefoneUsuario">
+    </div>
+    <div class="col-sm-6 my-1">
+      <label for="message-text" class="col-form-label">E-mail</label>
+      <input type="email" class="form-control" name="emailUsuario">
+    </div>
+    <div class="col-sm-6 my-1">
+      <label for="message-text" class="col-form-label">Senha</label>
+      <input type="password" class="form-control" name="senhaUsuario">
+    </div>
+      <button type="submit" class="btn verde">Cadastrar</button>
+    </form>
+    </div>
+  </div>
+</main>
+
+
+
+</body>
+
+</html>

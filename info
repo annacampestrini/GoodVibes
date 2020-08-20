@@ -1,0 +1,61 @@
+https://fontawesome.com/icons?d=gallery
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_zoom
+
+
+
+<div class="my-3 bg-white rounded">
+                <h6>Tabela de Frete</h6>    
+                <div class="media text-muted ">
+                  <div class="media-body mb-0 small lh-125 border-bottom border-gray">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <strong class="verde1">Jaraguá do Sul</strong>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <div class="col-sm-4">
+                        <span class="d-block text-gray-dark">Vila Nova</span>
+                      </div>
+                      <div class="col-sm-4" >
+                        <label for="recipient-name" class="col-form-label">R$ 11,90</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <div class="col-sm-4">
+                        <span class="d-block text-gray-dark">Barra do Rio Cerro</span>
+                      </div>
+                      <div class="col-sm-4" >
+                        <label for="recipient-name" class="col-form-label ">R$ 3,90</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col-10">
+                <input type="text" class="form-control" id="recipient-name" placeholder="CEP">
+                <div class="media text-muted">
+                  <div class="media-body mb-0 small lh-125 border-bottom border-gray">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <strong class="text-body">Total</strong>
+                      <label for="recipient-name" class="col-form-label">R$ 50,00</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+pm install validar-cpf -S
+const validarCpf = require('validar-cpf');

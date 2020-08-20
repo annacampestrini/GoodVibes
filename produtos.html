@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+        
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        
+  <link rel="stylesheet" href="css/jumbotron.css">
+
+  <script src="https://kit.fontawesome.com/922b6ec289.js" crossorigin="anonymous"></script>
+        
+  <meta charset="utf-8">
+  <title>GOOD VIBES</title>    
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto blog-header">
+      <img src="_img/good1.png" width="150" height="150">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/" id="pagHome">Home</a>
+        <a class="nav-link" href="/login" id="pagLogin">Login</a>
+  </header>
+
+  <div class="py-1 mb-2 col-sm-12 justify-content-between">
+    <nav class="nav d-flex justify-content-between verde3">
+      <a class="p-2 nav-link verde3" href="#">Frutas</a>
+      <a class="p-2 nav-link verde3" href="#">Verdura</a>
+      <a class="p-2 nav-link verde3" href="#">Sementes</a>
+      <a class="p-2 nav-link verde3" href="#">Legumes</a>
+      <a class="p-2 nav-link verde3" href="#">Tempero</a>
+      <a class="p-2 nav-link verde3" href="#">Típicas de Regiões</a>
+      <a class="p-2 nav-link verde3" href="#">De Estações</a>
+    </nav>
+  </div>
+</div>
+<div class="container">
+    <div id="resultado"></div>
+</div>
+
+<!-- /container -->
+  <!-- Modal Informações Produto -->
+  <div class="modal fade bd-example-modal-xl" data-backdrop="static" id="infoProd" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Destalhes do Produto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="row px-2 py-2">
+          <div class="col-sm-5">
+            <img src="_img/banana.jpg" class="card-img">
+            <div class="align-items-center p-3 my-3 text-white-50 rounded sombra">
+              <h5 class="card-title">Farm Market</h5>
+                <h6 class="mb-0 lh-100">Telefone: (99)9 9999-9999</h6>
+                <h6 class="mb-0 lh-100">E-mail: aaa@gmail.com</h6>
+                <h6 class="mb-0 lh-100">CNPJ: 99.999.999/9999-99</h6>
+                <h6 class="mb-0 lh-100">CEP: 99999-999</h6>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-body pt-0">
+              <h5 class="card-title">Banana Comum</h5>
+              <h3 class="card-title">R$ 12.99/Kg</h3>
+              <p class="text-justify">Também chamada de banana-d'água, o tipo mais popular no Brasil tem 87 calorias a cada 100 gramas. O nome vem do pequeno tamanho da bananeira, ideal para dar estabilidade contra ventos fortes. É levemente laxante</p>
+
+              <span style="font-size: 30px; color:black;">
+                <i class="fas fa-barcode"></i>
+                <i class="fas fa-credit-card"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+              </span>
+
+              <br>
+
+              <label for="recipient-name" class="col-form-label preto">Quantidade</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5">
+              <a href="#" class="btn verde"><i class="fas fa-plus"></i> Adicionar ao carinho</a>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="container">
+  <p>&copy; Good Vibes 2020</p>
+</footer>
+<script src="home.js"></script>
+</body>
+
+</html>
